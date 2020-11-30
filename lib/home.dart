@@ -62,7 +62,7 @@ class _HomeState extends State<Home> {
                   itemBuilder: (BuildContext context, int index) {
                     return GestureDetector(
                         onTap: () => Navigator.push(context,
-                            MaterialPageRoute(builder: (_) => Detail())),
+                            MaterialPageRoute(builder: (_) => Detail(name: names[index], description: descriptions[index]))),
                         child: RecommendedCard(
                             color: colors[index],
                             name: names[index],
